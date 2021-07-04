@@ -53,4 +53,7 @@ public class User implements Serializable {
     @OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "user")
     private UserProfile userProfile;
 
+    @OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL,mappedBy = "user")
+    private Address address;
+
 }
